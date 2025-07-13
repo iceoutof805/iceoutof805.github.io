@@ -32,6 +32,18 @@
             805 FUNDRAISERS
         </title>
         <style>
+            body {
+                padding: 5%;
+                background-image: url("docs/assets/monarchs.jpg");
+
+                /*trying to add a blur*/
+                filter: blur(8px);
+                -webkit-filter: blur(8px);
+
+                background-repeat: no-repeat;
+                background-attachment: fixed;  
+                background-size: cover; 
+            }
             .flex-container { 
                 display: flex;
                 align-items: center;
@@ -63,18 +75,6 @@
                 padding: 10px;
                 border-radius: 10px;
                 overflow: hidden;
-            }
-
-            body {
-                padding: 5%;
-                background-image: url("docs/assets/monarchs.jpg");
-                background-repeat: no-repeat;
-                background-attachment: fixed;  
-                background-size: cover; 
-
-                /*trying to add a blur*/
-                -webkit-backdrop-filter: blur(5px);
-                backdrop-filter: blur(5px);
             }
         </style>
     </head>
