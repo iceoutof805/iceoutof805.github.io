@@ -8,25 +8,48 @@
             805 FUNDRAISERS
         </title>
         <style>
+            h1 {
+                text-align: center;
+            }
+            .flex-container { 
+                display: flex;
+                flex-direction: column;
+                font-size: 30px;
+                text-align: center;
+            }
+            .flex-item-top {
+                background-color: #f1f1f1;
+                padding: 10px;
+                flex: 50%;
+            }
+            .flex-item-bottom {
+                background-color: #f1f1f1;
+                padding: 10px;
+                flex: 50%;
+            }
+
             body {
                 padding: 5%;
                 background-image: url("docs/assets/monarchs.jpg");
                 background-repeat: no-repeat;
                 background-attachment: fixed;  
-                background-size: cover;
-                z-index: -1;
+                background-size: cover; 
             }
         </style>
     </head>
     <body>
         <!--
             Add image to background -> make scaleable/autonatmically cropping
-            Center header 1 text
+            Center header 1 text    
             Center + add margin to each button + rescale to take up space
         -->
-        <header>
+       <!-- <header>
             <h1>FUNDRAISERS FOR FAMILIES AFFECTED BY ICE IN THE 805</h1>
-        </header>
+        </header>-->
+        <div class="flex-container">
+            <div class="flex-item-top">FUNDRAISERS FOR FAMILIES AFFECTED BY ICE IN THE 805</div>
+            <div class="flex-item-bottom">2</div>
+        </div>
         <!-- make 4 buttons
             "about" http://iceoutof805.github.io/about
             "gofundmes" http://iceoutof805.github.io/gofundmes
